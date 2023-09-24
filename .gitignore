@@ -1,0 +1,17 @@
+# Ignore Python byte code files, virtual environment folders, and cache folders
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+.idea/
+.vscode/
+
+# Ignore user-specific IDE and editor configuration files
+*.swp
+*.swo
+*.swn
+
+# Ignore the docs folder within the static folder
+/static/docs/

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismail Khan</title>
+</head>
+<body>
+    <header>
+        <h1><a href="/">Ismail Khan</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/cv">CV</a></li>
+                <li><a href="https://ismailkhan.hashnode.dev/">Blog</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- This is where the child content of the page will go -->
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="social-container">
+            <a href="https://github.com/iikhan-dev">Github</a>
+            <a href="https://www.linkedin.com/in/iikhan/">LinkedIn</a>
+            <a href="https://ismailkhan.hashnode.dev/">Hashnode</a>
+            
+            <div style="float:right;">
+                Ismail Khan &copy; 2023
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
