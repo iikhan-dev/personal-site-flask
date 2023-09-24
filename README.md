@@ -72,7 +72,13 @@ To run this project locally, follow these steps:
 6. Run the Flask development server:
 
    ```shell
-   flask run
+   python3 app.py
+   ```
+
+7. Build the tailwindCSS output.css:
+
+   ```shell
+   npx tailwindcss -i ./static/src/input.css -o ./static/dist/css/output.css --watch
    ```
 
    The website should be accessible at `http://localhost:5000` in your web browser.
