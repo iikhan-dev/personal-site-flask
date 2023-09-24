@@ -15,3 +15,5 @@ env/
 
 # Ignore the docs folder within the static folder
 /static/docs/
+
+.DS_Store
