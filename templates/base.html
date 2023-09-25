@@ -4,28 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ismail Khan</title>
+    <!-- Add the favicon -->
+    <link rel="icon" type="image/jpeg" href="/static/imgs/ik-favicon.jpg">
+
     <link rel="stylesheet" href="{{url_for('static', filename='dist/css/output.css')}}">
+    <script src="https://kit.fontawesome.com/3b7e1f5bdc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <header class="bg-blue-600 py-4">
-            <div class="container mx-auto flex justify-between items-center">
-                <h1 class="text-white text-2xl">
-                    <a href="/">Ismail Khan</a>
-                </h1>
-                <nav>
-                    <ul class="flex space-x-4">
-                        <li><a href="/cv" class="text-white hover:text-gray-300">CV</a></li>
-                        <li><a href="/blog" class="text-white hover:text-gray-300">Blog</a></li>
-                        <li><a href="/projects" class="text-white hover:text-gray-300">Projects</a></li>
-                        <li><a href="/resources" class="text-white hover:text-gray-300">Resources</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        
+    <header class="bg-blue-600 py-4">
+        <div>
+            <nav class="container mx-auto flex justify-between items-center">
+                <div>
+                    <a href="/" class="flex items-center">
+                        <img src="/static/imgs/ik-icon.svg" alt="Ismail Khan SVG Image" class="w-8 h-8 mr-2">
+                        <h1 class="text-white text-2xl">Ismail Khan</h1>
+                    </a>
+                </div>
+                <ul class="flex space-x-4">
+                    <li><a href="/cv" class="text-white hover:text-gray-300">CV</a></li>
+                    <li><a href="/blog" class="text-white hover:text-gray-300">Blog</a></li>
+                    <li><a href="/projects" class="text-white hover:text-gray-300">Projects</a></li>
+                    <li><a href="/resources" class="text-white hover:text-gray-300">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
+        
     <main>
         <!-- This is where the child content of the page will go -->
         {% block content %}{% endblock %}
@@ -33,13 +37,20 @@
 
     <footer class="bg-gray-800 text-white py-4 bottom-0 w-full sticky">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="social-container">
-                <a href="https://github.com/iikhan-dev" class="mr-4 hover:text-gray-300">Github</a>
-                <a href="https://www.linkedin.com/in/iikhan/" class="mr-4 hover:text-gray-300">LinkedIn</a>
-                <a href="https://ismailkhan.hashnode.dev/" class="hover:text-gray-300">Hashnode</a>
+            <div class="social-container flex items-center">
+                <a href="https://github.com/iikhan-dev" class="mr-4 hover:text-gray-300">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/iikhan/" class="mr-4 hover:text-gray-300">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="https://ismailkhan.hashnode.dev/" class="hover:text-gray-300">
+                    <i class="fa-brands fa-hashnode text-2xl"></i>
+                </a>
             </div>
+            
             <div>
-                Ismail Khan &copy; 2023
+                &copy; 2023
             </div>
         </div>
     </footer>    

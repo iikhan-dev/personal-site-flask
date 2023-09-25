@@ -85,4 +85,4 @@ To run this project locally, follow these steps:
 
 ## Deployment
 
-You can deploy this website to a hosting service of your choice, such as Heroku, Netlify, or Vercel. Ensure that you set up appropriate environment variables and configure the hosting platform to serve static files from the `/static` directory.
+This website is deployed with GitHub Pages and CI/CD with GitHub Actions.
