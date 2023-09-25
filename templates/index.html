@@ -1,26 +1,106 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block content %}
 
-{% block content %}
-    <h2 class="text-green-600">Hello, I'm Ismail!</h2>
-    <!-- <img src="/static/imgs/profile-pic.png" alt="Ismail Khan Profile"> -->
-    <p>I'm a Software Engineer with a background in web development and business analysis. I currently work as a Senior Software Test Engineer @ The Home Depot Canada. I work with Python, Node.js and major front-end frameworks. You can find some of the side-projects on my GitHub. I also occassionally write about technology from time to time.</p>
-    <p>Get in touch via LinkedIn or at ismailkhan.dev[at]gmail.com.</p>
-    <p>Thanks for visiting and happy coding!</p>
+<div class="container mx-auto mb-8">
+    <!-- Add margin to create even space between cards -->
 
-    <div>
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SQL</li>
-            <li>Git</li>
-            <li>Linux</li>
-            <li>Test Automation</li>
-            <li>Test Engineering</li>
-            <li>Business Analysis</li>
-            <li>Project Management</li>
-        </ul>
+    <!-- Hero Section -->
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-4">
+        <div class="flex items-center mb-4">
+            <div>
+                <img
+                    src="/static/imgs/profile-pic.png"
+                    alt="Ismail Khan profile picture."
+                    class="mx-auto rounded-md h-42 w-32 mb-4 object-cover"
+                />
+            </div>
+            <h2
+                id="translated-text"
+                class="text-4xl font-semibold text-green-600 mb-4 ml-4"
+            >
+                👋 Hello! I'm Ismail. 😃
+            </h2>
+        </div>
+
+        <p class="text-base text-gray-600 leading-relaxed">
+            I'm a Software Engineer from Toronto, Canada 🇨🇦 currently working as
+            a <strong>Senior Software Test Engineer</strong> at The Home Depot
+            Canada. I specialize in web development and test automation.
+        </p>
+        <p class="text-base text-gray-600 mt-4">
+            I primarily work with Python, TypeScript, Angular, and other major
+            front-end frameworks. You can check out my side-projects on my
+            GitHub. I also occasionally write about technology from time to
+            time. 💻🚀
+        </p>
+        <p class="text-base text-gray-600 mt-4">
+            Feel free to connect with me on
+            <a
+                href="https://www.linkedin.com/in/iikhan/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-500 hover:underline"
+                >LinkedIn</a
+            >
+            or by 📧 email at
+            <a
+                href="mailto:ismailkhan.dev@gmail.com"
+                class="text-blue-500 hover:underline"
+                >ismailkhan.dev[at]gmail.com</a
+            >.
+        </p>
+
+        <p class="text-base text-gray-600 mt-4">
+            Thanks for visiting and happy coding! 🙌
+        </p>
     </div>
+
+    <!-- Technical Skills Section -->
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <h2 class="text-2xl font-semibold text-green-600 mb-4">
+            Technical Skills 🛠️
+        </h2>
+        <!-- Proficient Skills -->
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Proficient 🚀</h3>
+        <div class="grid grid-cols-5 gap-2 mb-4">
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-sm"
+                >Python</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-sm"
+                >JavaScript</span
+            >
+            <!-- Add other proficient skills here -->
+        </div>
+
+        <!-- Familiar Skills -->
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Familiar 🔍</h3>
+        <div class="grid grid-cols-5 gap-2">
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-sm"
+                >HTML</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-sm"
+                >CSS</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-sm"
+                >SQL</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-sm"
+                >Git</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-sm"
+                >Linux</span
+            >
+            <!-- Add other familiar skills here -->
+        </div>
+    </div>
+</div>
+
+<!-- Import the translateText.js script -->
+<script src="{{ url_for('static', filename='js/translateText.js') }}"></script>
 {% endblock content %}

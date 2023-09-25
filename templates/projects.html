@@ -1,12 +1,145 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block content %}
+<div
+    class="bg-blue-100 border-t-4 border-blue-500 rounded-b text-blue-900 px-4 py-3 shadow-md mb-4 mt-4"
+>
+    <div class="flex items-center">
+        <div class="flex-shrink-0">
+            <!-- GitHub Icon -->
+            <i class="fab fa-github text-3xl mr-2"></i>
+        </div>
+        <div class="ml-3">
+            <p class="text-sm font-semibold">👇 Note:</p>
+            <a
+                href="https://github.com/iikhan-dev"
+                target="_blank"
+                class="text-blue-500 hover:underline block mb-4"
+                >View my GitHub profile here.</a
+            >
+        </div>
+    </div>
+</div>
 
-{% block content %}
-<a href="https://github.com/iikhan-dev" target="_blank">Check out my GitHub.</a>
+<!-- Projects Section -->
+<h2 class="text-2xl font-semibold text-gray-800 mb-2">Projects</h2>
+<div class="bg-white shadow-lg rounded-lg overflow-hidden flex">
+    <!-- Project Image -->
+    <div class="p-4">
+        <img
+            src="/static/imgs/ik-icon.svg"
+            alt="Ismailkhan.dev site icon."
+            class="w-full h-32 object-contain"
+        />
+    </div>
 
-<h2>Projects</h2>
-Personal Site (ismailkhan[dot]dev). Tech stack: Flask, Jinja2, Frozen-Flask, TailwindCSS, JavaScript, HTML, CSS, Git, GitHub, GitHub Pages.
+    <!-- Project Details -->
+    <div class="p-6">
+        <!-- Project Title -->
+        <p class="text-xl font-semibold text-gray-800 mb-2">
+            IsmailKhan[dot]dev Personal Site
+        </p>
 
-<h2>Scripts</h2>
+        <!-- Project Summary -->
+        <p class="text-gray-600 mb-4">
+            This website is statically built containing relevant information
+            about my coding profile.
+        </p>
 
+        <!-- Tech Stack Tags -->
+        <div class="mb-4">
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                >Python</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                >JavaScript</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                >Flask</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                >Frozen-Flask</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                >Jinja2</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                >TailwindCSS</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                >GitHub Pages</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                >GitHub Actions</span
+            >
+        </div>
 
-{% endblock %}
+        <!-- Project Links -->
+        <div>
+            <!-- GitHub Link as a Button -->
+            <a
+                href="https://github.com/iikhan-dev/personal-site-flask"
+                target="_blank"
+                class="text-white bg-blue-500 hover:bg-blue-600 py-2 px-2 rounded-md"
+            >
+                Repo Link
+                <i class="fa-brands fa-git-alt text-xl pl-1"></i>
+            </a>
+
+            <!-- Project Link -->
+        </div>
+    </div>
+</div>
+
+<!-- Scripts Section -->
+<h2 class="text-2xl font-semibold text-gray-800 mb-2">Scripts</h2>
+
+<div class="bg-white shadow-lg rounded-lg overflow-hidden flex">
+    <!-- Project Details -->
+    <div class="p-6">
+        <!-- Project Title -->
+        <p class="text-xl font-semibold text-gray-800 mb-2">
+            Automated Goodreads Friend Adder
+        </p>
+
+        <!-- Project Summary -->
+        <p class="text-gray-600 mb-4">
+            This script streamlines the process of connecting with friends on
+            Goodreads by automating friend requests.
+        </p>
+
+        <!-- Tech Stack Tags -->
+        <div class="mb-4">
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                >Python</span
+            >
+            <span
+                class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                >Playwright</span
+            >
+        </div>
+
+        <!-- Project Links -->
+        <div>
+            <!-- GitHub Link as a Button -->
+            <a
+                href="https://github.com/iikhan-dev/goodreads-add-friends"
+                target="_blank"
+                class="text-white bg-blue-500 hover:bg-blue-600 py-2 px-2 rounded-md"
+            >
+                Repo Link
+                <i class="fa-brands fa-git-alt text-xl pl-1"></i>
+            </a>
+
+            <!-- Project Link -->
+        </div>
+    </div>
+</div>
+{% endblock content%}
