@@ -1,4 +1,12 @@
 {
+    "socials": [
+        {
+            "github_link": "https://github.com/your-github-username",
+            "hashnode_link": "https://hashnode.com/@your-hashnode-username",
+            "linkedin_link": "https://www.linkedin.com/in/your-linkedin-username",
+            "resume_link": "/static/docs/Ismail-Khan-Resume.pdf"
+        }
+    ],
     "work_experience": [
         {
             "company": "The Home Depot Canada",

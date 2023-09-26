@@ -5,7 +5,7 @@ from flask import Blueprint, render_template, redirect
 views = Blueprint(__name__, "views")
 
 # Load data from JSON file
-with open("data/cv.json", "r") as json_file:
+with open("data/data.json", "r") as json_file:
     data = json.load(json_file)
 
 education_data = data.get("education_data", [])
