@@ -8,9 +8,10 @@ views = Blueprint(__name__, "views")
 with open("data/data.json", "r") as json_file:
     data = json.load(json_file)
 
+socials = data.get("socials", [])
+work_experience = data.get("work_experience", [])
 education_data = data.get("education_data", [])
 certification_data = data.get("certification_data", [])
-work_experience = data.get("work_experience", [])
 
 
 @views.route("/")
@@ -20,7 +21,7 @@ def home():
 
 @views.route("/projects")
 def projects():
-    return render_template("projects.html")
+    return render_template("projects.html", socials=socials)
 
 
 @views.route("/cv")
@@ -35,7 +36,7 @@ def cv():
 
 @views.route("/blog")
 def blog():
-    return redirect("https://ismailkhan.hashnode.dev/")
+    return redirect(socials.has)
 
 
 @views.route("/resources")

@@ -5,8 +5,8 @@ let currentLanguageIndex = 0;
 function translateText() {
     const translations = {
         English: "👋 Hello! I'm Ismail. 😃",
-        French: "👋 Bonjour! Je suis Ismail. 😃",
-        Spanish: "👋 ¡Hola! Soy Ismail. 😃",
+        French: "👋 Bonjour! Je suis Ismaïl. 😃",
+        Spanish: "👋 ¡Hola! Soy Ismael. 😃",
         Arabic: "😃 .مرحبًا! أنا إسماعيل 👋",
         Urdu: "😃 .ہیلو! میں اسماعیل ہوں 👋",
     };
