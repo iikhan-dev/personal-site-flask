@@ -36,9 +36,4 @@ def cv():
 
 @views.route("/blog")
 def blog():
-    return redirect(socials.has)
-
-
-@views.route("/resources")
-def resources():
-    return render_template("resources.html")
+    return redirect("https://ismailkhan.hashnode.dev/")
