@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %} {% macro
 bannerComponent(icon_class, icon_color, link, link_text) %}
 <div
-    class="bg-blue-100 border-t-4 border-blue-500 rounded-b text-blue-900 px-4 py-3 shadow-md mb-4 mt-4"
+    class="bg-blue-100 border-t-4 border-blue-800 rounded-b text-blue-900 px-4 py-3 shadow-md mb-4 mt-4"
 >
     <div class="flex items-center">
         <div class="flex-shrink-0">
@@ -9,91 +9,160 @@ bannerComponent(icon_class, icon_color, link, link_text) %}
             <i class="{{ icon_class }} text-3xl mr-2"></i>
         </div>
         <div class="ml-3">
-            <p class="text-sm font-semibold">👇 Note:</p>
             <a
                 href="{{ link }}"
                 target="_blank"
-                class="text-blue-500 hover:underline block mb-4"
+                class="text-blue-500 font-extrabold hover:text-orange-500 hover:underline block py-3"
                 >{{ link_text }}</a
             >
         </div>
     </div>
 </div>
 {% endmacro %} {{ bannerComponent("fa-solid fa-file", "blue",
-"/static/docs/Ismail-Khan-Resume.pdf", "View my resume here.") }}
+"/static/docs/Ismail-Khan-Resume.pdf", "View my Resume here.") }}
 
 <div class="my-8">
-    <h1 class="text-2xl font-semibold text-green-600 mb-4">Summarized CV</h1>
+    <h1 class="text-2xl font-semibold text-gray-800 mb-4">📄 Summarized CV</h1>
 
+    <!-- Work Experience Section -->
     <div class="mt-8">
-        <!-- Work Experience -->
-        <h2 class="text-xl font-semibold text-gray-800 mb-2">
-            Work Experience
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">
+            💼 Work Experience
         </h2>
-        {% for job in experience %}
-        <h3 class="text-lg font-semibold italic">
-            {{ job.company }}, {{ job.location }}
-        </h3>
-        <p>{{ job.position }}</p>
-        <ol
-            class="border-l border-neutral-300 dark:border-neutral-500 pl-8 mt-2"
+        <div
+            class="py-4 block w-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
         >
-            {% for position in job.positions %}
-            <li class="mb-{{ 4 if loop.last else 6 }}">
-                <div class="flex-start flex items-center pt-2">
-                    <div
-                        class="-ml-3 mr-3 h-2 w-2 rounded-full bg-neutral-300 dark:bg-neutral-500"
-                    ></div>
-                    <p class="text-sm text-gray-800 dark:text-neutral-300">
-                        {{ position.start_date }} - {{ position.end_date }}
-                    </p>
-                </div>
-                <div class="ml-2 mt-2">
-                    <h4 class="text-md font-medium">{{ position.title }}</h4>
-                </div>
-            </li>
+            <div>
+                {% for job in experience %}
+                <h3 class="text-md font-medium pl-5">
+                    {{ job.company }}, {{ job.location }}
+                </h3>
+                <ol
+                    class="ml-8 border-l border-blue-800 dark:border-neutral-500"
+                >
+                    {% for position in job.positions %}
+                    <li class="my-4">
+                        <div class="flex-start flex items-center pt-3">
+                            <div
+                                class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue-800 dark:bg-neutral-500"
+                            ></div>
+                            <p
+                                class="text-sm text-gray-800 dark:text-neutral-300"
+                            >
+                                {{ position.start_date }} - {{ position.end_date
+                                }}
+                            </p>
+                        </div>
+                        <div class="ml-4 mt-1">
+                            <h4 class="text-sm font-medium">
+                                {{ position.title }}
+                            </h4>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ol>
+            </div>
             {% endfor %}
-        </ol>
-        {% endfor %}
+        </div>
+    </div>
 
-        <div class="mt-8">
-            <!-- Education Section -->
-            <h3 class="text-xl font-semibold text-gray-800 my-4">Education</h3>
-            <ul class="list-inside pl-6 mb-4 text-gray-800">
+    <!-- Education Section -->
+    <div class="mt-8">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">🎓 Education</h2>
+        <div
+            class="block w-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+        >
+            <ul class="text-gray-800">
                 {% for item in education %}
-                <li>
-                    <h4 class="text-md font-medium">
-                        {{ item.degree }}, {{ item.field }}
-                    </h4>
-                    <p class="text-sm text-gray-500">
-                        {{ item.school }}, {{ item.year }}
-                    </p>
-                </li>
-                {% endfor %}
-            </ul>
+                <li class="w-full">
+                    <div
+                        class="flex items-center {% if loop.last %}border-b-0{% else %}border-b-2{% endif %}"
+                    >
+                        {% if item.school == "Juno College of Technology" %}
+                        <img
+                            src="/static/imgs/juno.jpeg"
+                            alt="Juno degree."
+                            class="w-8 h-8 mx-2"
+                        />
+                        {% elif item.school == "Toronto Metropolitan University"
+                        %}
+                        <img
+                            src="/static/imgs/tmu.jpeg"
+                            alt="TMU degree."
+                            class="w-8 h-8 mx-2"
+                        />
+                        {% endif %}
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-4 pl-2 dark:border-opacity-50"
+                        >
+                            <p class="text-md font-medium">
+                                {{ item.degree }}, {{ item.field }}
+                            </p>
 
-            <!-- Certificates and Courses Section -->
-            <h2 class="text-xl font-semibold text-gray-800 mb-2">
-                Certificates and Courses
-            </h2>
-            <ul class="list-inside pl-6 mb-4 text-gray-800">
-                {% for item in certificates %}
-                <li>
-                    <p>
-                        {{item.provider}}, {{ item.title }}. Issued:
-                        {{item.year}}.<a
-                            href="{{item.link}}"
-                            target="_blank"
-                            class="text-blue-500 hover:underline"
-                        >
-                            Certificate ID.</a
-                        >
-                    </p>
+                            <p class="text-sm text-gray-500">
+                                {{ item.school }}, {{ item.year }}
+                            </p>
+                        </div>
+                    </div>
                 </li>
                 {% endfor %}
             </ul>
         </div>
     </div>
 
+    <!-- Certificates and Courses Section -->
+    <div class="mt-8">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">
+            📚 Certificates & Courses
+        </h2>
+        <div
+            class="py-2 block w-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+        >
+            <ul>
+                {% for item in certificates %}
+                <li class="w-full">
+                    <div
+                        class="flex items-center {% if loop.last %}border-b-0{% else %}border-b-2{% endif %}"
+                    >
+                        {% if item.provider == "Udemy" %}
+                        <img
+                            src="/static/imgs/udemy.jpeg"
+                            alt="Udemy Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        {% elif item.provider == "Skillsoft" %}
+                        <img
+                            src="/static/imgs/skillsoft.jpeg"
+                            alt="Skillsoft Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        {% endif %}
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-2 pl-2 dark:border-opacity-50"
+                        >
+                            <strong class="text-md font-medium"
+                                >{{ item.title }}</strong
+                            ><br />
+                            <p class="text-sm text-gray-500">
+                                {{ item.provider }}. Issued: {{ item.year }}.<a
+                                    href="{{ item.link }}"
+                                    target="_blank"
+                                    class="text-blue-500 hover:text-orange-500 hover:underline py-1 px-1 inline-flex items-center"
+                                >
+                                    Certificate ID
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square ml-1"
+                                    ></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <!-- End of CV -->
     {% endblock %}
 </div>

@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block content %} {% macro
 bannerComponent(icon_class, icon_color, link, link_text) %}
 <div
-    class="bg-blue-100 border-t-4 border-blue-500 rounded-b text-blue-900 px-4 py-3 shadow-md mb-4 mt-4"
+    class="bg-blue-100 border-t-4 border-blue-800 rounded-b text-blue-900 px-4 py-3 shadow-md mb-4 mt-4"
 >
     <div class="flex items-center">
         <div class="flex-shrink-0">
@@ -9,11 +9,10 @@ bannerComponent(icon_class, icon_color, link, link_text) %}
             <i class="{{ icon_class }} text-3xl mr-2"></i>
         </div>
         <div class="ml-3">
-            <p class="text-sm font-semibold">👇 Note:</p>
             <a
                 href="{{ link }}"
                 target="_blank"
-                class="text-blue-500 hover:underline block mb-4"
+                class="text-blue-500 font-extrabold hover:text-orange-500 hover:underline block py-3"
                 >{{ link_text }}</a
             >
         </div>
