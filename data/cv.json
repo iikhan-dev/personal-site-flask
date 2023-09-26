@@ -1,0 +1,94 @@
+{
+    "work_experience": [
+        {
+            "company": "The Home Depot Canada",
+            "location": "Toronto, CA",
+            "positions": [
+                {
+                    "start_date": "Sept 2023",
+                    "end_date": "Present",
+                    "title": "Senior Software Test Engineer"
+                },
+                {
+                    "start_date": "May 2022",
+                    "end_date": "Sept 2023",
+                    "title": "Software Test Engineer"
+                },
+                {
+                    "start_date": "Feb 2021",
+                    "end_date": "May 2022",
+                    "title": "Junior Web Developer"
+                }
+            ]
+        },
+        {
+            "company": "Badr IT Consulting Group",
+            "location": "Toronto, CA",
+            "positions": [
+                {
+                    "start_date": "Aug 2020",
+                    "end_date": "Present",
+                    "title": "Software Developer"
+                }
+            ]
+        }
+    ],
+    "education_data": [
+        {
+            "year": "2020",
+            "school": "Juno College of Technology",
+            "degree": "Certificate",
+            "field": "Web Application Development"
+        },
+        {
+            "year": "2017",
+            "school": "Toronto Metropolitan University",
+            "degree": "Bachelor of Commerce (B.Comm.)",
+            "field": "Business Management"
+        }
+    ],
+    "certification_data": [
+        {
+            "title": "Automated Testing with Selenium",
+            "provider": "Skillsoft",
+            "year": "2023",
+            "link": "https://skillsoft.digitalbadges.skillsoft.com/cb2f194a-42e2-4ffe-917e-04844d91188c#gs.5mra0y"
+        },
+        {
+            "title": "Software Tester to DevOps Automated Tester",
+            "provider": "Skillsoft",
+            "year": "2023",
+            "link": "https://skillsoft.digitalbadges.skillsoft.com/7f69dda5-b943-4c89-8b9e-09300ea4ce4e"
+        },
+        {
+            "title": "Angular (Full App) with Angular Material, Angularfire & NgRx",
+            "provider": "Udemy",
+            "year": "2023",
+            "link": "https://www.udemy.com/certificate/UC-7e62dd8e-597c-4409-961a-4790109dcf05/"
+        },
+        {
+            "title": "MERN From Scratch 2023 | eCommerce Platform",
+            "provider": "Udemy",
+            "year": "2023",
+            "link": "https://www.udemy.com/certificate/UC-979a1773-818e-4fa1-80ae-91662edd6a44/"
+        },
+        {
+            "title": "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
+            "provider": "Udemy",
+            "year": "2023",
+            "link": "https://www.udemy.com/certificate/UC-0352a4f0-7284-4e2c-b2d8-319836a94e0d/"
+        },
+        {
+            "title": "JavaScript Algorithms and Data Structures Masterclass",
+            "provider": "Udemy",
+            "year": "2023",
+            "link": "https://www.udemy.com/certificate/UC-b34900a9-4a7a-4d0d-b1e6-186d4c2bfc1f/"
+        },
+        {
+            "title": "JavaScript: Understanding the Weird Parts",
+            "provider": "Udemy",
+            "year": "2023",
+            "link": "https://www.udemy.com/certificate/UC-be647ecd-7c0f-482e-9eb5-8f09164b8fab/"
+        }
+    ]
+}

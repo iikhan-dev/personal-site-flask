@@ -21,44 +21,77 @@
 </div>
 
 <div class="my-8">
-    <h2 class="text-2xl font-semibold text-green-600 mb-4">Summarized CV</h2>
+    <h1 class="text-2xl font-semibold text-green-600 mb-4">Summarized CV</h1>
 
-    <h3 class="text-lg font-semibold text-gray-800 mb-2">Education</h3>
-    <ul class="list-disc pl-6 mb-4 text-gray-600">
-        <li>
-            Jun 2020 - Juno College of Technology, Certificate, Web Application
-            Development
-        </li>
-        <li>
-            2017 - Toronto Metropolitian University, Bachelor of Commerce
-            (B.Comm.), Business Management
-        </li>
-    </ul>
+    <div class="mt-8">
+        <!-- Work Experience -->
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">
+            Work Experience
+        </h2>
+        {% for job in experience %}
+        <h3 class="text-lg font-semibold italic">
+            {{ job.company }}, {{ job.location }}
+        </h3>
+        <p>{{ job.position }}</p>
+        <ol
+            class="border-l border-neutral-300 dark:border-neutral-500 pl-8 mt-2"
+        >
+            {% for position in job.positions %}
+            <li class="mb-{{ 4 if loop.last else 6 }}">
+                <div class="flex-start flex items-center pt-2">
+                    <div
+                        class="-ml-3 mr-3 h-2 w-2 rounded-full bg-neutral-300 dark:bg-neutral-500"
+                    ></div>
+                    <p class="text-sm text-gray-800 dark:text-neutral-300">
+                        {{ position.start_date }} - {{ position.end_date }}
+                    </p>
+                </div>
+                <div class="ml-2 mt-2">
+                    <h4 class="text-md font-medium">{{ position.title }}</h4>
+                </div>
+            </li>
+            {% endfor %}
+        </ol>
+        {% endfor %}
 
-    <h3 class="text-lg font-semibold text-gray-800 mb-2">
-        Certificates, Courses, and Badges
-    </h3>
-    <ul class="list-disc pl-6 mb-4 text-gray-600">
-        <li>Skillsoft, Automated Testing with Selenium, 2023</li>
-        <li>Skillsoft, Software Tester to DevOps Automated Tester, 2023</li>
-        <li>
-            Udemy Brad Traversy, MERN from Scratch 2023 | eCommerce Platform,
-            2021
-        </li>
-    </ul>
+        <div class="mt-8">
+            <!-- Education Section -->
+            <h3 class="text-xl font-semibold text-gray-800 my-4">Education</h3>
+            <ul class="list-inside pl-6 mb-4 text-gray-800">
+                {% for item in education %}
+                <li>
+                    <h4 class="text-md font-medium">
+                        {{ item.degree }}, {{ item.field }}
+                    </h4>
+                    <p class="text-sm text-gray-500">
+                        {{ item.school }}, {{ item.year }}
+                    </p>
+                </li>
+                {% endfor %}
+            </ul>
 
-    <h3 class="text-lg font-semibold text-gray-800 mb-2">Work Experience</h3>
-    <ul class="list-disc pl-6 mb-4 text-gray-600">
-        <li>The Home Depot Canada (Toronto, CA)</li>
-        <ul class="list-disc pl-6 mb-2">
-            <li>Senior Software Test Engineer (2021 - Present)</li>
-            <li>Software Test Engineer (2019 - 2021)</li>
-            <li>Junior Web Developer (2018 - 2019)</li>
-        </ul>
-        <li>Business Analyst, Venus Concept (Toronto, CA)</li>
-        <li>Business Analyst, Wilson-Niblett Motors (Toronto, CA)</li>
-        <li>IT Analyst, Arqam House Inc. (Toronto, CA)</li>
-    </ul>
+            <!-- Certificates and Courses Section -->
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+                Certificates and Courses
+            </h2>
+            <ul class="list-inside pl-6 mb-4 text-gray-800">
+                {% for item in certificates %}
+                <li>
+                    <p>
+                        {{item.provider}}, {{ item.title }}. Issued:
+                        {{item.year}}.<a
+                            href="{{item.link}}"
+                            target="_blank"
+                            class="text-blue-500 hover:underline"
+                        >
+                            Certificate ID.</a
+                        >
+                    </p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    {% endblock %}
 </div>
-
-{% endblock %}

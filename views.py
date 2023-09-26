@@ -1,6 +1,16 @@
+# flake8: noqa
+import json
 from flask import Blueprint, render_template, redirect
 
 views = Blueprint(__name__, "views")
+
+# Load data from JSON file
+with open("data/cv.json", "r") as json_file:
+    data = json.load(json_file)
+
+education_data = data.get("education_data", [])
+certification_data = data.get("certification_data", [])
+work_experience = data.get("work_experience", [])
 
 
 @views.route("/")
@@ -15,7 +25,12 @@ def projects():
 
 @views.route("/cv")
 def cv():
-    return render_template("cv.html")
+    return render_template(
+        "cv.html",
+        experience=work_experience,
+        education=education_data,
+        certificates=certification_data,
+    )
 
 
 @views.route("/blog")

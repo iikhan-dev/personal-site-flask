@@ -1,5 +1,4 @@
 # Generate deployment files for the website
-
 from flask import Flask
 from flask_frozen import Freezer
 from views import views
