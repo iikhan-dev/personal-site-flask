@@ -21,19 +21,27 @@ def home():
 
 @views.route("/projects")
 def projects():
-    return render_template("projects.html", socials=socials)
+    return (
+        render_template("projects.html", socials=socials),
+        200,
+        {"content-type": "text/html; charset=utf-8"},
+    )
 
 
 @views.route("/cv")
 def cv():
-    return render_template(
-        "cv.html",
-        experience=work_experience,
-        education=education_data,
-        certificates=certification_data,
+    return (
+        render_template(
+            "cv.html",
+            experience=work_experience,
+            education=education_data,
+            certificates=certification_data,
+        ),
+        200,
+        {"content-type": "text/html; charset=utf-8"},
     )
 
 
-@views.route("/blog")
-def blog():
-    return redirect("https://ismailkhan.hashnode.dev/")
+# @views.route("/blog")
+# def blog():
+#     return redirect("https://ismailkhan.hashnode.dev/")

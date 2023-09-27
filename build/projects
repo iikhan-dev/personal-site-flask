@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Ismail Khan, Software Engineer from Toronto, Canada."
+        />
+        <meta name="author" content="Ismail Khan" />
+        <meta
+            name="keywords"
+            content="Software Engineer, Web Developer, Full-Stack Developer, JavaScript, Python, Front-End, Back-End, DevOps, API Integration, Toronto, Canada"
+        />
+        <meta name="robots" content="index, follow" />
+        <!-- Add the favicon -->
+        <link rel="icon" type="image/jpeg" href="/static/imgs/ik-favicon.jpg" />
+
+        <link
+            rel="stylesheet"
+            href="/static/dist/css/output.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/3b7e1f5bdc.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <title>Ismail Khan</title>
+    </head>
+    <body class="flex flex-col min-h-screen bg-blue-50">
+        <header class="py-4 bg-blue-900 text-slate-300 font-mono">
+            <div>
+                <nav
+                    class="container mx-auto max-w-5xl flex justify-between items-center"
+                >
+                    <div>
+                        <a href="/" class="flex items-center">
+                            <img
+                                src="/static/imgs/ik-icon.svg"
+                                alt="Ismail Khan SVG Image"
+                                class="w-8 h-8 mr-2"
+                            />
+                            <h1
+                                class="font-semibold text-2xl uppercase hover:text-orange-500 hover:underline"
+                            >
+                                Ismail Khan
+                            </h1>
+                        </a>
+                    </div>
+                    <ul class="flex space-x-4">
+                        <li>
+                            <a
+                                href="/cv"
+                                class="font-bold hover:bg-orange-500 hover:text-white rounded-md px-3 py-2"
+                                >CV</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="/projects"
+                                class="font-bold hover:bg-orange-500 hover:text-white rounded-md px-3 py-2"
+                                >Projects</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="/blog"
+                                class="font-bold hover:bg-orange-500 hover:text-white rounded-md px-3 py-2"
+                                >Blog</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container mx-auto max-w-5xl flex-grow">
+            <!-- This is where the child content of the page will go -->
+              
+<div
+    class="bg-blue-100 border-t-4 border-blue-800 rounded-b text-blue-900 px-4 py-3 shadow-md mb-4 mt-4"
+>
+    <div class="flex items-center">
+        <div class="flex-shrink-0">
+            <!-- Icon -->
+            <i class="fab fa-github text-3xl mr-2"></i>
+        </div>
+        <div class="ml-3">
+            <a
+                href="https://github.com/iikhan-dev"
+                target="_blank"
+                class="text-blue-500 font-extrabold hover:text-orange-500 hover:underline block py-3"
+                >View my GitHub profile here.</a
+            >
+        </div>
+    </div>
+</div>
+
+
+<!-- Projects Section -->
+<div class="my-8">
+    <h1 class="text-2xl font-semibold text-gray-800 mb-4">🦺 Projects</h1>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex mb-4">
+        <!-- Project Image -->
+        <div class="p-4">
+            <img
+                src="/static/imgs/ik-icon.svg"
+                alt="Ismailkhan.dev site icon."
+                class="w-full h-32 object-contain"
+            />
+        </div>
+
+        <!-- Project Details -->
+        <div class="p-6">
+            <!-- Project Title -->
+            <p class="text-xl font-semibold text-gray-800 mb-2">
+                IsmailKhan[dot]dev Personal Site
+            </p>
+
+            <!-- Project Summary -->
+            <p class="text-gray-600 mb-4">
+                This website is statically built containing relevant information
+                about my coding profile.
+            </p>
+
+            <!-- Tech Stack Tags -->
+            <div class="mb-4">
+                <span
+                    class="bg-orange-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                    >Website</span
+                >
+                <span
+                    class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                    >Python</span
+                >
+                <span
+                    class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                    >JavaScript</span
+                >
+                <span
+                    class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                    >Flask</span
+                >
+                <span
+                    class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                    >Frozen-Flask</span
+                >
+                <span
+                    class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                    >Jinja2</span
+                >
+                <span
+                    class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                    >TailwindCSS</span
+                >
+                <span
+                    class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                    >GitHub Pages</span
+                >
+                <span
+                    class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                    >GitHub Actions</span
+                >
+            </div>
+
+            <!-- Project Links -->
+            <div class="flex items-center">
+                <!-- GitHub Link as a Button -->
+                <a
+                    href="https://github.com/iikhan-dev/personal-site-flask"
+                    target="_blank"
+                    class="text-white bg-blue-500 hover:bg-blue-600 py-2 px-2 rounded-md"
+                >
+                    Repo
+                    <i class="fa-brands fa-git-alt text-xl pl-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden flex mb-4">
+        <!-- Project Details -->
+        <div class="p-6">
+            <!-- Project Title -->
+            <p class="text-xl font-semibold text-gray-800 mb-2">
+                Automated Goodreads Friend Adder
+            </p>
+
+            <!-- Project Summary -->
+            <p class="text-gray-600 mb-4">
+                This script streamlines the process of connecting with friends
+                on Goodreads by automating friend requests.
+            </p>
+
+            <!-- Tech Stack Tags -->
+            <div class="mb-4">
+                <span
+                    class="bg-orange-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                    >Script</span
+                >
+                <span
+                    class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                    >Python</span
+                >
+                <span
+                    class="bg-blue-200 text-blue-800 rounded-full px-2 py-1 text-xs mr-2"
+                    >Playwright</span
+                >
+            </div>
+
+            <!-- Project Links -->
+            <div>
+                <!-- GitHub Link as a Button -->
+                <a
+                    href="https://github.com/iikhan-dev/goodreads-add-friends"
+                    target="_blank"
+                    class="text-white bg-blue-500 hover:bg-blue-600 py-2 px-2 rounded-md"
+                >
+                    Repo
+                    <i class="fa-brands fa-git-alt text-xl pl-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+        </main>
+
+        <footer
+            class="bg-blue-900 text-slate-300 font-mono py-4 bottom-0 w-full sticky"
+        >
+            <div
+                class="container mx-auto max-w-5xl flex justify-between items-center"
+            >
+                <div class="social-container flex items-center">
+                    <a
+                        href="https://github.com/iikhan-dev"
+                        class="mr-4 hover:text-orange-500"
+                    >
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/iikhan/"
+                        class="mr-4 hover:text-orange-500"
+                    >
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a
+                        href="https://ismailkhan.hashnode.dev/"
+                        class="hover:text-orange-500"
+                    >
+                        <i class="fa-brands fa-hashnode text-2xl"></i>
+                    </a>
+                </div>
+
+                <div class="px-3">&copy; 2023</div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -13,6 +13,10 @@ FLATPAGES_EXTENSION = ".md"
 app = Flask(__name__)
 app.register_blueprint(views, url_prefix="/")
 app.config.from_object(__name__)
+app.config["FREEZER_IGNORE_ENDPOINTS"] = ["/blog"]
+app.config["FREEZER_IGNORE_MIMETYPE_WARNINGS"] = True
+
+
 freezer = Freezer(app)
 
 
@@ -22,4 +26,4 @@ def page_not_found(e):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=8000)
+    app.run(debug=True)

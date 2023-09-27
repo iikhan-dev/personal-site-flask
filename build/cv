@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Ismail Khan, Software Engineer from Toronto, Canada."
+        />
+        <meta name="author" content="Ismail Khan" />
+        <meta
+            name="keywords"
+            content="Software Engineer, Web Developer, Full-Stack Developer, JavaScript, Python, Front-End, Back-End, DevOps, API Integration, Toronto, Canada"
+        />
+        <meta name="robots" content="index, follow" />
+        <!-- Add the favicon -->
+        <link rel="icon" type="image/jpeg" href="/static/imgs/ik-favicon.jpg" />
+
+        <link
+            rel="stylesheet"
+            href="/static/dist/css/output.css"
+        />
+        <script
+            src="https://kit.fontawesome.com/3b7e1f5bdc.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <title>Ismail Khan</title>
+    </head>
+    <body class="flex flex-col min-h-screen bg-blue-50">
+        <header class="py-4 bg-blue-900 text-slate-300 font-mono">
+            <div>
+                <nav
+                    class="container mx-auto max-w-5xl flex justify-between items-center"
+                >
+                    <div>
+                        <a href="/" class="flex items-center">
+                            <img
+                                src="/static/imgs/ik-icon.svg"
+                                alt="Ismail Khan SVG Image"
+                                class="w-8 h-8 mr-2"
+                            />
+                            <h1
+                                class="font-semibold text-2xl uppercase hover:text-orange-500 hover:underline"
+                            >
+                                Ismail Khan
+                            </h1>
+                        </a>
+                    </div>
+                    <ul class="flex space-x-4">
+                        <li>
+                            <a
+                                href="/cv"
+                                class="font-bold hover:bg-orange-500 hover:text-white rounded-md px-3 py-2"
+                                >CV</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="/projects"
+                                class="font-bold hover:bg-orange-500 hover:text-white rounded-md px-3 py-2"
+                                >Projects</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="/blog"
+                                class="font-bold hover:bg-orange-500 hover:text-white rounded-md px-3 py-2"
+                                >Blog</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container mx-auto max-w-5xl flex-grow">
+            <!-- This is where the child content of the page will go -->
+              
+<div
+    class="bg-blue-100 border-t-4 border-blue-800 rounded-b text-blue-900 px-4 py-3 shadow-md mb-4 mt-4"
+>
+    <div class="flex items-center">
+        <div class="flex-shrink-0">
+            <!-- Icon -->
+            <i class="fa-solid fa-file text-3xl mr-2"></i>
+        </div>
+        <div class="ml-3">
+            <a
+                href="/static/docs/Ismail-Khan-Resume.pdf"
+                target="_blank"
+                class="text-blue-500 font-extrabold hover:text-orange-500 hover:underline block py-3"
+                >View my Resume here.</a
+            >
+        </div>
+    </div>
+</div>
+
+
+<div class="my-8">
+    <h1 class="text-2xl font-semibold text-gray-800 mb-4">📄 Summarized CV</h1>
+
+    <!-- Work Experience Section -->
+    <div class="mt-8">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">
+            💼 Work Experience
+        </h2>
+        <div
+            class="py-4 block w-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+        >
+            <div>
+                
+                <h3 class="text-md font-medium pl-5">
+                    The Home Depot Canada, Toronto, CA
+                </h3>
+                <ol
+                    class="ml-8 border-l border-blue-800 dark:border-neutral-500"
+                >
+                    
+                    <li class="my-4">
+                        <div class="flex-start flex items-center pt-3">
+                            <div
+                                class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue-800 dark:bg-neutral-500"
+                            ></div>
+                            <p
+                                class="text-sm text-gray-800 dark:text-neutral-300"
+                            >
+                                Sept 2023 - Present
+                            </p>
+                        </div>
+                        <div class="ml-4 mt-1">
+                            <h4 class="text-sm font-medium">
+                                Senior Software Test Engineer
+                            </h4>
+                        </div>
+                    </li>
+                    
+                    <li class="my-4">
+                        <div class="flex-start flex items-center pt-3">
+                            <div
+                                class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue-800 dark:bg-neutral-500"
+                            ></div>
+                            <p
+                                class="text-sm text-gray-800 dark:text-neutral-300"
+                            >
+                                May 2022 - Sept 2023
+                            </p>
+                        </div>
+                        <div class="ml-4 mt-1">
+                            <h4 class="text-sm font-medium">
+                                Software Test Engineer
+                            </h4>
+                        </div>
+                    </li>
+                    
+                    <li class="my-4">
+                        <div class="flex-start flex items-center pt-3">
+                            <div
+                                class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue-800 dark:bg-neutral-500"
+                            ></div>
+                            <p
+                                class="text-sm text-gray-800 dark:text-neutral-300"
+                            >
+                                Feb 2021 - May 2022
+                            </p>
+                        </div>
+                        <div class="ml-4 mt-1">
+                            <h4 class="text-sm font-medium">
+                                Junior Web Developer
+                            </h4>
+                        </div>
+                    </li>
+                    
+                </ol>
+            </div>
+            
+                <h3 class="text-md font-medium pl-5">
+                    Badr IT Consulting Group, Toronto, CA
+                </h3>
+                <ol
+                    class="ml-8 border-l border-blue-800 dark:border-neutral-500"
+                >
+                    
+                    <li class="my-4">
+                        <div class="flex-start flex items-center pt-3">
+                            <div
+                                class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue-800 dark:bg-neutral-500"
+                            ></div>
+                            <p
+                                class="text-sm text-gray-800 dark:text-neutral-300"
+                            >
+                                Aug 2020 - Present
+                            </p>
+                        </div>
+                        <div class="ml-4 mt-1">
+                            <h4 class="text-sm font-medium">
+                                Software Developer
+                            </h4>
+                        </div>
+                    </li>
+                    
+                </ol>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="mt-8">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">🎓 Education</h2>
+        <div
+            class="block w-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+        >
+            <ul class="text-gray-800">
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-2"
+                    >
+                        
+                        <img
+                            src="/static/imgs/juno.jpeg"
+                            alt="Juno degree."
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-4 pl-2 dark:border-opacity-50"
+                        >
+                            <p class="text-md font-medium">
+                                Certificate, Web Application Development
+                            </p>
+
+                            <p class="text-sm text-gray-500">
+                                Juno College of Technology, 2020
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-0"
+                    >
+                        
+                        <img
+                            src="/static/imgs/tmu.jpeg"
+                            alt="TMU degree."
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-4 pl-2 dark:border-opacity-50"
+                        >
+                            <p class="text-md font-medium">
+                                Bachelor of Commerce (B.Comm.), Business Management
+                            </p>
+
+                            <p class="text-sm text-gray-500">
+                                Toronto Metropolitan University, 2017
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <!-- Certificates and Courses Section -->
+    <div class="mt-8">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">
+            📚 Certificates & Courses
+        </h2>
+        <div
+            class="py-2 block w-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
+        >
+            <ul>
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-2"
+                    >
+                        
+                        <img
+                            src="/static/imgs/udemy.jpeg"
+                            alt="Udemy Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-2 pl-2 dark:border-opacity-50"
+                        >
+                            <strong class="text-md font-medium"
+                                >Angular (Full App) with Angular Material, Angularfire &amp; NgRx</strong
+                            ><br />
+                            <p class="text-sm text-gray-500">
+                                Udemy. Issued: Sept 2023.<a
+                                    href="https://www.udemy.com/certificate/UC-7e62dd8e-597c-4409-961a-4790109dcf05/"
+                                    target="_blank"
+                                    class="text-blue-500 hover:text-orange-500 hover:underline py-1 px-1 inline-flex items-center"
+                                >
+                                    Certificate ID
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square ml-1"
+                                    ></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-2"
+                    >
+                        
+                        <img
+                            src="/static/imgs/udemy.jpeg"
+                            alt="Udemy Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-2 pl-2 dark:border-opacity-50"
+                        >
+                            <strong class="text-md font-medium"
+                                >MERN From Scratch 2023 | eCommerce Platform</strong
+                            ><br />
+                            <p class="text-sm text-gray-500">
+                                Udemy. Issued: Sept 2023.<a
+                                    href="https://www.udemy.com/certificate/UC-979a1773-818e-4fa1-80ae-91662edd6a44/"
+                                    target="_blank"
+                                    class="text-blue-500 hover:text-orange-500 hover:underline py-1 px-1 inline-flex items-center"
+                                >
+                                    Certificate ID
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square ml-1"
+                                    ></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-2"
+                    >
+                        
+                        <img
+                            src="/static/imgs/udemy.jpeg"
+                            alt="Udemy Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-2 pl-2 dark:border-opacity-50"
+                        >
+                            <strong class="text-md font-medium"
+                                >NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)</strong
+                            ><br />
+                            <p class="text-sm text-gray-500">
+                                Udemy. Issued: Sept 2023.<a
+                                    href="https://www.udemy.com/certificate/UC-0352a4f0-7284-4e2c-b2d8-319836a94e0d/"
+                                    target="_blank"
+                                    class="text-blue-500 hover:text-orange-500 hover:underline py-1 px-1 inline-flex items-center"
+                                >
+                                    Certificate ID
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square ml-1"
+                                    ></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-2"
+                    >
+                        
+                        <img
+                            src="/static/imgs/udemy.jpeg"
+                            alt="Udemy Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-2 pl-2 dark:border-opacity-50"
+                        >
+                            <strong class="text-md font-medium"
+                                >The Complete JavaScript Course 2023: From Zero to Expert!</strong
+                            ><br />
+                            <p class="text-sm text-gray-500">
+                                Udemy. Issued: Sept 2023.<a
+                                    href="https://www.udemy.com/certificate/UC-e2052cfd-e546-467a-a857-490aeab13f1c/"
+                                    target="_blank"
+                                    class="text-blue-500 hover:text-orange-500 hover:underline py-1 px-1 inline-flex items-center"
+                                >
+                                    Certificate ID
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square ml-1"
+                                    ></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-2"
+                    >
+                        
+                        <img
+                            src="/static/imgs/udemy.jpeg"
+                            alt="Udemy Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-2 pl-2 dark:border-opacity-50"
+                        >
+                            <strong class="text-md font-medium"
+                                >JavaScript Algorithms and Data Structures Masterclass</strong
+                            ><br />
+                            <p class="text-sm text-gray-500">
+                                Udemy. Issued: Sept 2023.<a
+                                    href="https://www.udemy.com/certificate/UC-b34900a9-4a7a-4d0d-b1e6-186d4c2bfc1f/"
+                                    target="_blank"
+                                    class="text-blue-500 hover:text-orange-500 hover:underline py-1 px-1 inline-flex items-center"
+                                >
+                                    Certificate ID
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square ml-1"
+                                    ></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-2"
+                    >
+                        
+                        <img
+                            src="/static/imgs/udemy.jpeg"
+                            alt="Udemy Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-2 pl-2 dark:border-opacity-50"
+                        >
+                            <strong class="text-md font-medium"
+                                >JavaScript: Understanding the Weird Parts</strong
+                            ><br />
+                            <p class="text-sm text-gray-500">
+                                Udemy. Issued: Sept 2023.<a
+                                    href="https://www.udemy.com/certificate/UC-be647ecd-7c0f-482e-9eb5-8f09164b8fab/"
+                                    target="_blank"
+                                    class="text-blue-500 hover:text-orange-500 hover:underline py-1 px-1 inline-flex items-center"
+                                >
+                                    Certificate ID
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square ml-1"
+                                    ></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-2"
+                    >
+                        
+                        <img
+                            src="/static/imgs/udemy.jpeg"
+                            alt="Udemy Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-2 pl-2 dark:border-opacity-50"
+                        >
+                            <strong class="text-md font-medium"
+                                >The Web Developer Bootcamp 2023</strong
+                            ><br />
+                            <p class="text-sm text-gray-500">
+                                Udemy. Issued: Sept 2023.<a
+                                    href="https://www.udemy.com/certificate/UC-8c95a919-4b3d-4d36-a9dd-990939a93de9/"
+                                    target="_blank"
+                                    class="text-blue-500 hover:text-orange-500 hover:underline py-1 px-1 inline-flex items-center"
+                                >
+                                    Certificate ID
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square ml-1"
+                                    ></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-2"
+                    >
+                        
+                        <img
+                            src="/static/imgs/udemy.jpeg"
+                            alt="Udemy Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-2 pl-2 dark:border-opacity-50"
+                        >
+                            <strong class="text-md font-medium"
+                                >Web Design for Web Developers: Build Beautiful Websites!</strong
+                            ><br />
+                            <p class="text-sm text-gray-500">
+                                Udemy. Issued: Sept 2023.<a
+                                    href="https://www.udemy.com/certificate/UC-c13dfe67-779b-4139-817d-e0724b0dcd89/"
+                                    target="_blank"
+                                    class="text-blue-500 hover:text-orange-500 hover:underline py-1 px-1 inline-flex items-center"
+                                >
+                                    Certificate ID
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square ml-1"
+                                    ></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-2"
+                    >
+                        
+                        <img
+                            src="/static/imgs/udemy.jpeg"
+                            alt="Udemy Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-2 pl-2 dark:border-opacity-50"
+                        >
+                            <strong class="text-md font-medium"
+                                >The Complete Python Programming Course: Beginner to Advanced</strong
+                            ><br />
+                            <p class="text-sm text-gray-500">
+                                Udemy. Issued: Sept 2023.<a
+                                    href="https://www.udemy.com/certificate/UC-a450ad40-a679-42a5-a885-a2822ecfdec4/"
+                                    target="_blank"
+                                    class="text-blue-500 hover:text-orange-500 hover:underline py-1 px-1 inline-flex items-center"
+                                >
+                                    Certificate ID
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square ml-1"
+                                    ></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-2"
+                    >
+                        
+                        <img
+                            src="/static/imgs/skillsoft.jpeg"
+                            alt="Skillsoft Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-2 pl-2 dark:border-opacity-50"
+                        >
+                            <strong class="text-md font-medium"
+                                >Automated Testing with Selenium</strong
+                            ><br />
+                            <p class="text-sm text-gray-500">
+                                Skillsoft. Issued: Jul 2023.<a
+                                    href="https://skillsoft.digitalbadges.skillsoft.com/cb2f194a-42e2-4ffe-917e-04844d91188c#gs.5mra0y"
+                                    target="_blank"
+                                    class="text-blue-500 hover:text-orange-500 hover:underline py-1 px-1 inline-flex items-center"
+                                >
+                                    Certificate ID
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square ml-1"
+                                    ></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="w-full">
+                    <div
+                        class="flex items-center border-b-0"
+                    >
+                        
+                        <img
+                            src="/static/imgs/skillsoft.jpeg"
+                            alt="Skillsoft Certificate"
+                            class="w-8 h-8 mx-2"
+                        />
+                        
+                        <div
+                            class="border-neutral-100 border-opacity-100 py-2 pl-2 dark:border-opacity-50"
+                        >
+                            <strong class="text-md font-medium"
+                                >Software Tester to DevOps Automated Tester</strong
+                            ><br />
+                            <p class="text-sm text-gray-500">
+                                Skillsoft. Issued: Aug 2023.<a
+                                    href="https://skillsoft.digitalbadges.skillsoft.com/7f69dda5-b943-4c89-8b9e-09300ea4ce4e"
+                                    target="_blank"
+                                    class="text-blue-500 hover:text-orange-500 hover:underline py-1 px-1 inline-flex items-center"
+                                >
+                                    Certificate ID
+                                    <i
+                                        class="fa-solid fa-arrow-up-right-from-square ml-1"
+                                    ></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <!-- End of CV -->
+    
+        </main>
+
+        <footer
+            class="bg-blue-900 text-slate-300 font-mono py-4 bottom-0 w-full sticky"
+        >
+            <div
+                class="container mx-auto max-w-5xl flex justify-between items-center"
+            >
+                <div class="social-container flex items-center">
+                    <a
+                        href="https://github.com/iikhan-dev"
+                        class="mr-4 hover:text-orange-500"
+                    >
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/iikhan/"
+                        class="mr-4 hover:text-orange-500"
+                    >
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a
+                        href="https://ismailkhan.hashnode.dev/"
+                        class="hover:text-orange-500"
+                    >
+                        <i class="fa-brands fa-hashnode text-2xl"></i>
+                    </a>
+                </div>
+
+                <div class="px-3">&copy; 2023</div>
+            </div>
+        </footer>
+    </body>
+</html>
