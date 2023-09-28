@@ -1,4 +1,4 @@
-title: My Sample Post Title
+title: My Sample Post Title, and the Best Way to Style It in Markdown
 date: 2023-09-28
 author: Ismail Khan
 description: This is a sample blog post written in Markdown that demonstrates some basic formatting and functionality.

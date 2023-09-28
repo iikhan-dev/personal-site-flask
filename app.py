@@ -33,7 +33,12 @@ certification_data = data.get("certification_data", [])
 @app.route("/blog/<path:path>/")
 def page(path):
     page = pages.get_or_404(path)
-    return render_template("page.html", page=page)
+    return render_template("singlepost.html", page=page)
+
+
+@app.route("/blog/")
+def blog():
+    return render_template("bloghome.html", pages=pages)
 
 
 # All other routes.
@@ -63,11 +68,6 @@ def cv():
         200,
         {"Content-Type": "text/html; charset=utf-8"},
     )
-
-
-@app.route("/blog/")
-def blog():
-    return "hello world, this is my blog page."
 
 
 @freezer.register_generator
