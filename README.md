@@ -1,11 +1,12 @@
-# Ismail Khan [dot] dev
+# Ismail Khan - Personal Site
 
 Welcome to Ismail Khan's personal website! This website showcases my portfolio, blog, and other projects. It's built using Flask, Frozen-Flask, Jinja2, TailwindCSS, and TypeScript.
+
+Follows PEP8 style guidelines for Python code.
 
 ## Features
 
 -   **Home Page**: An introduction to me and my work.
--   **About Page**: Learn more about my background, skills, and interests.
 -   **Projects Page**: Explore the projects I've worked on, complete with descriptions and links.
 -   **Blog Page**: Access my blog posts on various topics.
 -   **Responsive Design**: The website is responsive and looks great on both desktop and mobile devices.
@@ -28,13 +29,13 @@ To run this project locally, follow these steps:
 1. Clone the repository to your local machine:
 
     ```shell
-    git clone https://github.com/yourusername/your-website.git
+    git clone https://github.com/ismailkhan-dev/personal-github-site-flask.git
     ```
 
 2. Navigate to the project directory:
 
     ```shell
-    cd your-website
+    cd personal-github-site-flask
     ```
 
 3. Create a virtual environment (recommended):
@@ -75,7 +76,7 @@ To run this project locally, follow these steps:
     flask --app app --debug run
     ```
 
-7. Build the tailwindCSS output.css (in another shell, optional):
+7. Build the tailwindCSS output.css in another shell (optional):
 
     ```shell
     npx tailwindcss -i ./static/src/input.css -o ./static/dist/css/output.css --watch
@@ -83,12 +84,8 @@ To run this project locally, follow these steps:
 
     The website should be accessible at `http://localhost:5000` in your web browser.
 
-8. Building for Freezer-Flask
+8. Build the static files with Frozen-Flask:
 
     ```shell
      python3 build.py
     ```
-
-## Deployment
-
-This website is deployed with GitHub Pages and CI/CD with GitHub Actions.

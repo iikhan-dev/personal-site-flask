@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block content %}
+
+<div>
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <!-- Blog Title -->
+        <h1 class="text-3xl font-semibold mb-4">{{ page.title }}</h1>
+
+        <!-- Metadata -->
+        <div class="flex flex-wrap items-center mb-4">
+            <strong></strong>
+            <span class="text-gray-600 text-sm">By: {{ page.author }} </span>
+            <span class="text-gray-600 text-sm ml-4"> {{ page.date }} </span>
+            <span class="text-gray-600 text-sm ml-4">
+                Tags: {% for tag in page.tags.split(",") %}
+                <span
+                    class="inline-block bg-blue-500 text-white rounded-full px-2 py-1 text-xs font-semibold mr-2"
+                    >{{ tag }}</span
+                >
+                {% endfor %}
+            </span>
+        </div>
+
+        <!-- Horizontal Line -->
+        <hr class="my-6 border-t-2 border-gray-300" />
+
+        <!-- Blog Content -->
+        <div class="prose">
+            <p>{{ page.html|safe }}</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}

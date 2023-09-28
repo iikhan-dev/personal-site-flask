@@ -1,22 +1,22 @@
-# Generate deployment files for the website
+# flake8: noqa
 import json
 from flask import Flask, render_template
 from flask_frozen import Freezer
+from flask_flatpages import FlatPages
 
-# some configurations, ensure:
-# 1. Pages are loaded on request
-# 2. Page files are in markdown
+# Configurations
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = ".md"
 
 app = Flask(__name__)
 app.config.from_object(__name__)
-app.testing = True
-app.config["FREEZER_IGNORE_ENDPOINTS"] = ["/blog"]
-# app.config["FREEZER_IGNORE_MIMETYPE_WARNINGS"] = True
 
+# Flatpages extension
+app.config["FLATPAGES_EXTENSION"] = ".md"
+pages = FlatPages(app)
 
+# Frozen-Flask freezer
 freezer = Freezer(app)
 
 # Load data from JSON file
@@ -29,6 +29,14 @@ education_data = data.get("education_data", [])
 certification_data = data.get("certification_data", [])
 
 
+# URL Routing for flat pages. Retrieves the page path from the URL and renders the page.
+@app.route("/blog/<path:path>/")
+def page(path):
+    page = pages.get_or_404(path)
+    return render_template("page.html", page=page)
+
+
+# All other routes.
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -57,9 +65,14 @@ def cv():
     )
 
 
-# @app.route("/blog")
-# def blog():
-#     return redirect("https://ismailkhan.hashnode.dev/")
+@app.route("/blog/")
+def blog():
+    return "hello world, this is my blog page."
+
+
+@freezer.register_generator
+def error_handlers():
+    yield "/404/"
 
 
 @app.errorhandler(404)
