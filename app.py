@@ -3,6 +3,8 @@ import json
 from flask import Flask, render_template
 from flask_frozen import Freezer
 from flask_flatpages import FlatPages
+from flaskext.markdown import Markdown
+
 
 # Configurations
 DEBUG = True
@@ -14,7 +16,14 @@ app.config.from_object(__name__)
 
 # Flatpages extension
 app.config["FLATPAGES_EXTENSION"] = ".md"
+app.config["FLATPAGES_ROOT"] = "pages"
 pages = FlatPages(app)
+markdown_manager = Markdown(
+    app,
+    extensions=["fenced_code"],
+    output_format="html5",
+)
+
 
 # Frozen-Flask freezer
 freezer = Freezer(app)
