@@ -1,6 +1,5 @@
 <!-- Single Post Page -->
 {% extends "base.html" %} {% block content %}
-
 <div>
     <!-- Breadcrumb -->
     <nav
@@ -53,19 +52,17 @@
         </ol>
     </nav>
 
-    <div class="bg-white rounded-lg shadow-md p-6">
+    <div class="bg-white rounded-lg shadow-md px-5 py-3">
         <!-- Blog Title -->
         <h1 class="text-3xl font-semibold mb-4">{{ page.title }}</h1>
 
         <!-- Metadata -->
         <div class="flex flex-wrap items-center mb-4">
-            <strong></strong>
-            <span class="text-gray-600 text-sm">By: {{ page.author }} </span>
-            <span class="text-gray-600 text-sm ml-4"> {{ page.date }} </span>
+            <span class="text-gray-600 text-sm"> {{ page.date }} </span>
             <span class="text-gray-600 text-sm ml-4">
                 Tags: {% for tag in page.tags.split(",") %}
                 <span
-                    class="inline-block bg-blue-500 text-white rounded-full px-2 py-1 text-xs font-semibold mr-2"
+                    class="inline-block bg-blue-500 text-white rounded-full px-2 py-1 text-xs font-semibold"
                     >{{ tag }}</span
                 >
                 {% endfor %}
@@ -76,9 +73,7 @@
         <hr class="my-6 border-t-2 border-gray-300" />
 
         <!-- Blog Content -->
-        <div>
-            <p>{{ page.html|safe }}</p>
-        </div>
+        <div class="post-content">{{ page.html|safe }}</div>
     </div>
 </div>
 {% endblock content %}
