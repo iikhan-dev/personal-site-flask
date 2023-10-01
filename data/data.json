@@ -13,7 +13,42 @@
         { "url": "/blog", "label": "Blog" },
         { "url": "/resources", "label": "Resources" }
     ],
+    "skill_icons": [
+        { "class": "devicon-javascript-plain", "name": "javascript" },
+        { "class": "devicon-typescript-plain", "name": "typescript" },
+        { "class": "devicon-jquery-plain", "name": "jquery" },
+        { "class": "devicon-python-plain", "name": "python" },
+        { "class": "devicon-flask-plain", "name": "flask" },
+        { "class": "devicon-django-plain", "name": "django" },
+        { "class": "devicon-angularjs-plain", "name": "angularjs" },
+        { "class": "devicon-react-plain", "name": "react" },
+        { "class": "devicon-nextjs-plain", "name": "nextjs" },
+        { "class": "devicon-googlecloud-plain", "name": "googlecloud" },
+        { "class": "devicon-tailwindcss-plain", "name": "tailwindcss" },
+        { "class": "devicon-postgresql-plain", "name": "postgresql" },
+        { "class": "devicon-bash-plain", "name": "bash" },
+        { "class": "devicon-pytest-plain", "name": "pytest" },
+        { "class": "devicon-git-plain", "name": "git" },
+        { "class": "devicon-bitbucket-plain", "name": "bitbucket" },
+        { "class": "devicon-github-plain", "name": "github" },
+        { "class": "devicon-confluence-plain", "name": "confluence" },
+        { "class": "devicon-jira-plain", "name": "jira" },
+        { "class": "devicon-cucumber-plain", "name": "cucumber" },
+        { "class": "devicon-css3-plain", "name": "css3" },
+        { "class": "devicon-html5-plain", "name": "html5" }
+    ],
     "work_experience": [
+        {
+            "company": "Badr Consulting Group Inc.",
+            "location": "Toronto, CA",
+            "positions": [
+                {
+                    "start_date": "Jan 2021",
+                    "end_date": "Present",
+                    "title": "Full-Stack Developer"
+                }
+            ]
+        },
         {
             "company": "The Home Depot Canada",
             "location": "Toronto, CA",
@@ -32,17 +67,6 @@
                     "start_date": "Feb 2021",
                     "end_date": "May 2022",
                     "title": "Junior Web Developer"
-                }
-            ]
-        },
-        {
-            "company": "Badr IT Consulting Group",
-            "location": "Toronto, CA",
-            "positions": [
-                {
-                    "start_date": "Aug 2020",
-                    "end_date": "Present",
-                    "title": "Software Developer"
                 }
             ]
         }

@@ -33,6 +33,7 @@ socials = data.get("socials", [])
 work_experience = data.get("work_experience", [])
 education_data = data.get("education_data", [])
 certification_data = data.get("certification_data", [])
+skill_icons = data.get("skill_icons", [])
 
 
 # URL Routing for flat pages. Retrieves the page path from the URL and renders the page.
@@ -56,7 +57,11 @@ def home():
 @app.route("/projects/")
 def projects():
     return (
-        render_template("projects.html", socials=socials),
+        render_template(
+            "projects.html",
+            socials=socials,
+            skill_icons=skill_icons,
+        ),
         200,
         {"Content-Type": "text/html; charset=utf-8"},
     )

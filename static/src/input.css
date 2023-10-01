@@ -16,6 +16,8 @@
     --base-line-height: 1.5rem;
 }
 
+/* Single Post Page */
+
 .post-content .text-base {
     font-size: var(--base-font-size);
     line-height: var(--base-line-height);

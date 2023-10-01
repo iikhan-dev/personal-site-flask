@@ -21,9 +21,23 @@ bannerComponent(icon_class, icon_color, link, link_text) %}
 {% endmacro %} {{ bannerComponent("fab fa-github", "blue",
 "https://github.com/iikhan-dev", "View my GitHub profile here.") }}
 
+<h2 class="text-2xl font-semibold text-gray-800 mb-4">🧠 Skills</h2>
+
+<!-- Skills section -->
+<div class="bg-white rounded-lg shadow-lg p-3">
+    <div class="grid grid-cols-8">
+        {% for icon in skill_icons %}
+        <div class="flex flex-col items-center">
+            <i class="{{ icon.class }} colored text-5xl"></i>
+            <p class="mt-2 text-sm">{{ icon.name }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
 <!-- Projects Section -->
 <div class="my-8">
-    <h1 class="text-2xl font-semibold text-gray-800 mb-4">🦺 Projects</h1>
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">🦺 Projects</h2>
     <div class="bg-white shadow-lg rounded-lg overflow-hidden flex mb-4">
         <!-- Project Image -->
         <div class="p-4">
